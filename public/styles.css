@@ -100,7 +100,7 @@ p {
 
 /* main logo ----------------------------------------------------------------------------- */
 #logo {
-    max-width: 40em;
+    max-width: 26em;
 }
 
 #date {
@@ -121,11 +121,18 @@ p {
     border-radius: 5px;
     padding: .5em;
     font-weight: bolder;
-    font-size: large;
+    font-size: x-large;
+}
+
+.signup:hover {
+    color:white;
+    background-color: rgb(222, 158, 129);
 }
 
 /* prizes ------------------------------------------------------------------------------ */
-
+.prize-card {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
 
 /* schedule ------------------------------------------------------------------------------ */
 #schedule {
@@ -316,8 +323,18 @@ li span {
 
 
 /* sponsors ---------------------------------------------------------------------------- */
-.circuits {
-    width: 100%;
+#sponsors {
+    /* shorthand:         img url                position  / size  repeat */
+    background: url("./images/circuits.svg") center top / 100% no-repeat;
+}
+
+/* For any viewports less than 700px wide */
+@media (max-width: 700px) {
+
+    #sponsors {
+        background: url("./images/circuits.svg") left top / 650px no-repeat;
+    }
+
 }
 
 
