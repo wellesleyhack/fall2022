@@ -1,0 +1,24 @@
+{
+  "name": "whack2022",
+  "version": "1.0.0",
+  "description": "whack2022 test website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliviagiandrea/whack2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliviagiandrea/whack2022/issues"
+  },
+  "homepage": "https://github.com/oliviagiandrea/whack2022#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
