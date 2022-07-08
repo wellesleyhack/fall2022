@@ -337,6 +337,26 @@ li span {
 
 }
 
+.spon-contact {
+    color: #E39774;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #E39774;
+    background-color: #E39774;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: .5em;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.spon-contact:hover {
+    color:white;
+    background-color: rgb(222, 158, 129);
+}
+
 
 
 /* footer ------------------------------------------------------------------------------ */
