@@ -11,8 +11,6 @@
 
 /* global ------------------------------------------------------------------------------ */
 body {
-    /* background: url("../images/bw-bg.jpg") center center / cover no-repeat fixed; */
-    /* color: white; */
     background: url("images/vine1.svg") left top no-repeat, url("images/vine2.svg") left top no-repeat, url("images/vine3.svg") left bottom no-repeat;
     background-size: 55em, 55em, 55em;
     font-family: 'Montserrat', sans-serif !important;
@@ -37,9 +35,7 @@ p {
 }
 
 .bg-overlay {
-    /* background-image: linear-gradient(to right bottom, rgb(0, 153, 204), rgb(102, 153, 0)); */
     background-color: #002776;
-    /* opacity: 0.8; */
 }
 
 .btn-primary {
