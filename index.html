@@ -27,11 +27,22 @@
 <body class="bg-overlay">
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <a class="navbar-brand" href="#" style="padding-left: 1.5em;">
-      <img src="public/images/logo.svg" width="70" height="70" class="d-inline-block align-top" alt="">
+      <img src="images/logo.svg" width="70" height="70" class="d-inline-block align-top" alt="">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div id="collapse-container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mlh-collapsed-container">
+        <a class="nav-link" id="mlh-collapsed-badge"
+          style="max-width:100px;min-width:60px;" 
+          href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2022-season&amp;utm_content=white" 
+          target="_blank">
+          <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" 
+          alt="Major League Hacking 2022 Hackathon Season" style="width:100%">
+        </a>
+      </div>
+    </div>
     <div class="collapse navbar-collapse" id="navbarNav" >
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -49,15 +60,15 @@
         <li class="nav-item">
           <a class="nav-link white" href="#sponsors">Sponsors</a>
         </li>
-        <!-- <li class="nav-item">
-          <a id="mlh-trust-badge" 
-            style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" 
+        <li class="nav-item" id="mlh-badge-container">
+          <a class="nav-link" id="mlh-badge"
+            style="max-width:100px;min-width:60px;" 
             href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2022-season&amp;utm_content=white" 
             target="_blank">
             <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" 
             alt="Major League Hacking 2022 Hackathon Season" style="width:100%">
           </a>
-        </li> -->
+        </li>
       </ul>
     </div>
   </nav>
