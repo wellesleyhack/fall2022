@@ -30,20 +30,19 @@
 
 <body class="bg-overlay">
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <a class="navbar-brand" href="#" style="padding-left: 1.5em;">
-      <img src="public/images/logo.svg" width="70" height="70" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="#">
+      <img src="public/images/logo.svg" width="70" height="70" class="d-inline-block align-top" alt="WHACK logo">
     </a>
     <div id="collapse-container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div id="mlh-collapsed-container">
-        <a class="nav-link" id="mlh-collapsed-badge"
-          style="max-width:100px;min-width:60px;" 
+        <a class="nav-link mlh-badge" id="mlh-collapsed-badge"
           href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2022-season&amp;utm_content=white" 
           target="_blank">
-          <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" 
-          alt="Major League Hacking 2022 Hackathon Season" style="width:100%">
+          <img class="mlh-img" src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" 
+          alt="Major League Hacking 2022 Hackathon Season">
         </a>
       </div>
     </div>
@@ -65,12 +64,11 @@
           <a class="nav-link white" href="#sponsors">Sponsors</a>
         </li>
         <li class="nav-item" id="mlh-badge-container">
-          <a class="nav-link" id="mlh-badge"
-            style="max-width:100px;min-width:60px;" 
+          <a class="nav-link mlh-badge"
             href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2022-season&amp;utm_content=white" 
             target="_blank">
-            <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" 
-            alt="Major League Hacking 2022 Hackathon Season" style="width:100%">
+            <img class="mlh-img" src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" 
+            alt="Major League Hacking 2022 Hackathon Season">
           </a>
         </li>
       </ul>
@@ -88,20 +86,20 @@
   </section>
 
   <section id="prizes">
-    <div class="container" style="margin-top: 8em;">
+    <div class="container">
       <div class="row justify-content-center">
         <h1>prizes</h1><br>
-        <div class="prize-card card" style="min-width: 230px; max-width: 700px; margin-top: 1em;">
+        <div class="prize-card card">
           <div class="row">
-            <div class="col-md-7" style="padding: 0em !important">
-              <div class="card-body" style="margin: 1em !important; padding: 0em !important">
-                <h5 class="card-title" style="margin: 0em !important; padding: 0em !important">Coming Soon...</h5>
-                <p class="card-text" style="margin: 0em 0em 2em 0em !important; padding: 0em !important">Check back in early September for more information, or pre-register to be notified when we update our prizes!</p>
-                <a href="https://forms.gle/nEUBJJydPoC3qukg9" class="signup" style="margin-top: 2em;">Pre-Register Now!</a>
+            <div class="card-text-col col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Coming Soon...</h5>
+                <p class="card-text">Check back in early September for more information, or pre-register to be notified when we update our prizes!</p>
+                <a href="https://forms.gle/nEUBJJydPoC3qukg9" class="signup">Pre-Register Now!</a>
               </div>
             </div>
-            <div class="col-md-5 text-end" style="padding: 0em !important">
-              <img src="public/images/construction.svg" class="img-fluid rounded-start" alt="Construction" style="margin: auto 1em 1em auto;">
+            <div class="card-img-col col-md-5">
+              <img src="public/images/construction.svg" class="img-fluid rounded-start card-img" alt="WHACK Construction">
             </div>
           </div>
         </div>
@@ -109,19 +107,19 @@
     </div>
   </section>
 
-  <section id="schedule" class="section" style="margin-top: 15em;">
-    <div class="container" style="min-height: 900px;">
+  <section id="schedule">
+    <div class="container">
       <div class="row">
-        <div class="col-9" style="margin-top: 2em;">
-          <h1 style="margin-top: 1em;">schedule</h1>
+        <div class="col-9 sch-col">
+          <h1 class="title-margin">schedule</h1>
           <div class="card sch-card">
             <div class="card-header">
               <ul class="nav nav-pills card-header-pills justify-content-between">
                 <li class="nav-item">
-                  <a class="nav-link active" id="tab-saturday" aria-current="true" style="margin-left:1em;">Saturday</a>
+                  <a class="nav-link active" id="tab-saturday" aria-current="true">Saturday</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link inactive" id="tab-sunday" style="margin-right:1em;">Sunday</a>
+                  <a class="nav-link inactive" id="tab-sunday">Sunday</a>
                 </li>
               </ul>
             </div>
@@ -164,7 +162,7 @@
           </div>
         </div>
         <div class="col-3">
-          <img src="public/images/logo.svg" width="100%" style="min-width: 65px;">
+          <img src="public/images/logo.svg" class="sch-img">
         </div>
       </div>
     </div>
@@ -174,7 +172,7 @@
     <div class="container">
       <div class="col-12">
         <h1>faq</h1>
-        <ul style="margin-left: 2em;">
+        <ul class="faq-list">
           <li class="question"><span>
             What is a Hackathon?
             <p class="answer">
@@ -221,7 +219,7 @@
             </p>
           </span></li>
           <li class="question"><span>
-            How will hackers be accepted??
+            How will hackers be accepted?
             <p class="answer">
               Upon registration for WHACK via our Google form, all hackers are welcome to come.
             </p>
@@ -247,38 +245,33 @@
             </p>
           </span></li>
           <li class="question"><span>
-            What if I can only come for part of the weekend??
+            What if I can only come for part of the weekend?
             <p class="answer">
               If you have a special circumstance, please indicate so on your application. 
               WHACK is ultimately a resource for you to learn, connect with others, and meet 
               mentors in industry, so you&#39;ll get more out of it if you can stay for the whole event.
             </p>
           </span></li>
-          <!-- <li class="question"><span>
-            ?
-            <p class="answer">
-              
-            </p>
-          </span></li> -->
         </ul>
-        <p class="text-center white">Other Questions? Email us at <a style="color: #E39774 !important;" href="mailto:hello@wellesleyhacks.org">hello@wellesleyhacks.org</a>!</p>
+        <p class="text-center white">Other Questions? Email us at <a class="email-link" href="mailto:hello@wellesleyhacks.org">hello@wellesleyhacks.org</a>!</p>
       </div>
     </div>
   </section>
 
-  <section id="team" class="section">
-    <div class="container" style="margin-top: 6em;">
+  <section id="team">
+    <div class="container">
       <h1>team</h1>
-      <div class="row">
-        <div class="col-12 text-center" style="margin-top: 1em;">
-          <p class="intro">Introducing the 2022 WHACK organizing team.</p>
+      <div class="row title-margin">
+        <div class="col-12 text-center">
           <p class="intro">
+            Introducing the 2022 WHACK organizing team.
+            <br/><br/>
             We're all incredibly excited for you to join us and 
             enjoy the amazing events we have lined up for you!
           </p>
         </div>
       </div>
-      <div class="row justify-content-center seeds" style="margin-bottom: 2em;">
+      <div class="row justify-content-center seeds">
         <div class="seed selected" id="seed-dir"><div class="seed-txt selected-txt" id="text-dir">Directors</div></div>
         <div class="seed" id="seed-dev"><div class="seed-txt" id="text-dev">Web Dev</div></div>
         <div class="seed" id="seed-md"><div class="seed-txt txt-md" id="text-md">Marketing/<br>Design</div></div>
@@ -314,7 +307,7 @@
           </div>
         </div>
         <div class="card team-card text-center">
-          <img src="public/images/ids/zoey_yan.jpg" class="card-img-top" alt="Zoey Yang">
+          <img src="public/images/ids/zoey_yan.jpg" class="card-img-top" alt="Zoey Yan">
           <div class="card-body">
             <h5 class="card-title">Zoey Yan</h5>
             <h7>2025</h7>
@@ -461,21 +454,21 @@
     </div>
   </section>
 
-  <section id="sponsors" style="margin: 2em auto 6em auto">
-    <div class="container" style="margin-top: 6em;">
+  <section id="sponsors">
+    <div class="container">
       <div class="row justify-content-center">
         <h1>sponsors</h1>
-        <div class="prize-card card" style="min-width: 360px; max-width: 600px; margin-top: 1em;">
+        <div class="prize-card card">
           <div class="row">
-            <div class="col-md-7" style="padding: 0em !important">
-              <div class="card-body align-items-center" style="margin: 1em !important; padding: 0em !important">
-                <h5 class="card-title" style="margin: 0em !important; padding: 0em !important">To Be Announced...</h5>
-                <p class="card-text" style="margin: 0em 0em 2em 0em !important; padding: 0em !important">Interested in sponsoring WHACK? Get in touch with us!</p>
-                <a href="mailto:hello@wellesleyhacks.org" class="spon-contact" style="margin-top: 2em;">Email hello@wellesleyhacks.org</a>
+            <div class="col-md-7">
+              <div class="card-body align-items-center">
+                <h5 class="card-title">To Be Announced...</h5>
+                <p class="card-text">Interested in sponsoring WHACK? Get in touch with us!</p>
+                <a href="mailto:hello@wellesleyhacks.org" class="spon-contact">hello@wellesleyhacks.org</a>
               </div>
             </div>
-            <div class="col-md-5 text-end" style="padding: 0em !important">
-              <img src="public/images/sponsors.svg" class="img-fluid rounded-start" alt="Sponsor Family" style="margin: auto 1em 1em auto;">
+            <div class="col-md-5 card-img-col">
+              <img src="public/images/sponsors.svg" class="img-fluid rounded-start" alt="Sponsor Family">
             </div>
           </div>
         </div>

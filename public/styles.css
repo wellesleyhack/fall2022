@@ -32,6 +32,12 @@ h1 {
     font-weight: 700 !important;
 }
 
+@media (max-width: 500px) {
+    h1 {
+        text-align: center;
+    }
+}
+
 p {
     text-overflow: ellipsis !important;
 }
@@ -56,21 +62,19 @@ p {
     padding-right: 0;
 }
 
-.section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* header navbar ------------------------------------------------------------------------- */
 .navbar {
     margin-bottom: 0;
 }
 
+.navbar-brand {
+    padding-left: 1.5em !important;
+}
+
 .navbar-nav {
     margin-left: auto;
     padding-right: 1em;
+    padding-top: 2rem;
 }
 
 .navbar-nav .nav-item {
@@ -82,14 +86,46 @@ p {
     float: right;
 }
 
+.nav-link:hover {
+	transition: 0.5s;
+}
+
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+}
+
+.nav-link::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #FBFFF1;  
+    transform: scaleX(0);  
+    transition: 350ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.navbar-collapse {
+    padding-top: 2rem;
+}
+
 #mlh-badge-container {
     position: relative;
     min-width: 7rem;
 }
 
-#mlh-badge {
+.mlh-badge {
     position: absolute;
     top: -100%;
+    max-width:100px;
+    min-width:60px;
+}
+
+.mlh-badge:after {
+    display: none;
+}
+
+.mlh-img {
+    width:100%;
 }
 
 #mlh-collapsed-container {
@@ -115,8 +151,13 @@ p {
     }
 
     #mlh-collapsed-badge {
-        position: absolute;
         top: -83%;
+    }
+}
+
+@media (max-width: 400px) {
+    #mlh-collapsed-container {
+        min-width: 4rem;
     }
 }
 
@@ -153,6 +194,12 @@ p {
     max-width: 26em;
 }
 
+@media (max-width: 500px) {
+    #logo {
+        max-width: 80%;
+    }
+}
+
 #date {
     color: #E39774 !important;
     margin: 1em auto 1em auto;
@@ -172,6 +219,7 @@ p {
     padding: .5em;
     font-weight: bolder;
     font-size: x-large;
+    margin-top: 2em;
 }
 
 .signup:hover {
@@ -180,29 +228,100 @@ p {
 }
 
 /* prizes ------------------------------------------------------------------------------ */
+#prizes {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .prize-card {
     background-color: rgba(255, 255, 255, 0.7) !important;
+    padding-bottom: 1rem;
+    max-width: 700px; 
+    margin-top: 1em;
+    min-width: 360px;
+}
+
+@media (max-width: 400px) {
+    .prize-card {
+        max-width: 80% !important;
+    }
+}
+
+.card-title {
+    padding-bottom: 1rem;
+}
+
+.card-body {
+    margin: 1em !important; 
+    padding: 0em !important;
+}
+
+.card-text {
+    margin: 0em 0em 2em 0em !important;
+    padding: 0em !important;
+}
+
+.card-text-col {
+    padding: 0em !important;
+}
+
+.card-img-col {
+    text-align: end;
+    padding: 0em !important;
+}
+
+.card-img {
+    margin: auto 1em 1em auto !important;
+    width: 75% !important;
+}
+
+@media (max-width: 767px) {
+    .card-body {
+        text-align: center;
+    }
+
+    .card-img-col {
+        text-align: center;
+    }
+
+    .card-img {
+        margin: 2rem auto 1rem auto !important;
+        width: 75% !important;
+    }
 }
 
 /* schedule ------------------------------------------------------------------------------ */
 #schedule {
     /* shorthand:         img url                position  / size  repeat */
-    background: url("./images/sch_circuit.svg") center top / 100% no-repeat;
+    background: url("./images/sch_circuit.svg") center center / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* For any viewports less than 700px wide */
-@media (max-width: 700px) {
+.sch-col {
+    margin-top: 2em;
+}
 
-    #schedule {
-        background: url("./images/sch_circuit.svg") left top / 650px no-repeat;
-    }
-
+.title-margin {
+    margin-top: 1em;
 }
 
 .sch-card {
     background-color: rgba(255, 255, 255, 0.7) !important;
     margin-top: 2em;
     min-width: 695px !important;
+}
+
+#tab-saturday {
+    margin-left:1em;
+}
+
+#tab-sunday {
+    margin-right:1em;
 }
 
 .nav-pills .nav-link.active {
@@ -261,11 +380,27 @@ hr.separator {
     margin-right: 1.25em !important;
 }
 
-
+.sch-img {
+    min-width: 65px;
+    width: 100%;
+}
 
 /* faq -------------------------------------------------------------------------------- */
-ul {
+#faq {
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto 4rem auto;
+}
+
+.faq-list {
     list-style-type: none;
+    margin: auto 2rem 2rem 1rem;
+}
+
+@media (max-width: 767px) {
+    .faq-list {
+        margin-left: 0px;
+    }
 }
 
 .question:before {
@@ -299,6 +434,8 @@ li span {
     font-weight: 700;
     letter-spacing: -0.02em;
     font-size: large !important;
+    padding-left: 40px;
+    text-indent: -40px;
 }
 
 .answer {
@@ -306,6 +443,7 @@ li span {
     font-weight: normal;
     letter-spacing: -0.02em;
     margin: 0.5em 1em 1em 1em;
+    text-indent: 0px;
     display: none;
 }
 
@@ -313,8 +451,18 @@ li span {
     cursor: pointer;
 }
 
+.email-link {
+    color: #E39774;
+}
+
 
 /* team -------------------------------------------------------------------------------- */
+#team {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto 2rem auto;
+}
+
 .intro {
     color: #E39774 !important;
 }
@@ -328,12 +476,8 @@ li span {
     padding-top: .9em;
 }
 
-.card-title {
-    margin-bottom: 0em !important;
-}
-
 .seeds {
-    margin-top: 2em !important;
+    margin: 2em auto 2em auto !important;
 }
 
 .seed {
@@ -374,15 +518,14 @@ li span {
 
 /* sponsors ---------------------------------------------------------------------------- */
 #sponsors {
-    /* shorthand:         img url                position  / size  repeat */
-    background: url("./images/circuits.svg") center top / 100% no-repeat;
-}
-
-/* For any viewports less than 700px wide */
-@media (max-width: 700px) {
-    #sponsors {
-        background: url("./images/circuits.svg") left top / 650px no-repeat;
-    }
+    /* shorthand:         img url             position  / size  repeat */
+    background: url("./images/circuits.svg") center top / cover no-repeat;
+    /* margin: 6em auto 6em auto; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 4rem auto;
 }
 
 .spon-contact {
@@ -397,7 +540,7 @@ li span {
     border-radius: 5px;
     padding: .5em;
     font-weight: bolder;
-    font-size: large;
+    font-size: medium;
 }
 
 .spon-contact:hover {
