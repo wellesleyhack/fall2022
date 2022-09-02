@@ -1,35 +1,36 @@
 /* colors ------------------------------------------------------------------------------ */
 /* primary */
-    /* dark blue:   #002776 */
-    /* cadet blue:  #5C9EAD */
-    /* ivory white: #FBFFF1 */
-    /* light blue:  #C7F0FF */
+    /* dark blue:    #002776 */
+    /* cadet blue:   #5C9EAD */
+    /* ivory white:  #FBFFF1 */
+    /* light blue:   #C7F0FF */
 /* secondary */
-    /* orange:      #E39774 */
-    /* light green: #407C59 */
-    /* dark green:  #214E34 */
+    /* light orange: #E39774 */
+    /* dark orange:  #d46633 */
+    /* light green:  #407C59 */
+    /* dark green:   #214E34 */
 
 /* global ------------------------------------------------------------------------------ */
 body {
     /* background: url("../images/bw-bg.jpg") center center / cover no-repeat fixed; */
     /* color: white; */
     background: url("images/vine1.svg") left top no-repeat, url("images/vine2.svg") left top no-repeat, url("images/vine3.svg") left bottom no-repeat;
-    background-size: 55em, 55em, 55em;
+    background-size: contain, contain, contain;
     font-family: 'Montserrat', sans-serif !important;
     font-style: normal;
     font-size: medium !important;
 }
 
-/* For any viewports greater than 440px wide */
-@media (min-width: 700px) {
+@media (max-width: 500px) {
     body {
-        background-size: 100%, 100%, 100%;
+        background-size: 200%, 300%, 300%;
     }
 }
 
 h1 {
     color: white !important;
     font-weight: 700 !important;
+    padding-bottom: 2rem;
 }
 
 @media (max-width: 500px) {
@@ -205,18 +206,18 @@ p {
 }
 
 #date {
-    color: #E39774 !important;
+    color: #d46633 !important;
     margin: 1em auto 1em auto;
     font-weight: bolder !important;
 }
 
 .signup {
-    color: #E39774;
+    color: #d46633;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid #E39774;
-    background-color: #E39774;
+    border: 1px solid #d46633;
+    background-color: #d46633;
     text-decoration: none;
     color: white;
     border-radius: 5px;
@@ -231,6 +232,10 @@ p {
     background-color: rgb(222, 158, 129);
 }
 
+.large-btn {
+    font-size: x-large !important;
+}
+
 /* prizes ------------------------------------------------------------------------------ */
 #prizes {
     min-height: 100vh;
@@ -243,7 +248,7 @@ p {
     background-color: rgba(255, 255, 255, 0.7) !important;
     padding-bottom: 1rem;
     max-width: 700px; 
-    margin-top: 1em;
+    margin-top: 2em;
     min-width: 360px;
 }
 
@@ -255,6 +260,11 @@ p {
 
 .card-title {
     padding-bottom: 1rem;
+    font-size: 15pt;
+}
+
+.card-year {
+    font-size: 13pt;
 }
 
 .card-body {
@@ -262,6 +272,10 @@ p {
     padding: 0em !important;
 }
 
+.prize-card >
+.row >
+.card-text-col >
+.card-body >
 .card-text {
     margin: 0em 0em 2em 0em !important;
     padding: 0em !important;
@@ -310,10 +324,6 @@ p {
     margin-top: 2em;
 }
 
-.title-margin {
-    margin-top: 1em;
-}
-
 .sch-card {
     background-color: rgba(255, 255, 255, 0.7) !important;
     margin-top: 2em;
@@ -326,6 +336,11 @@ p {
 
 #tab-sunday {
     margin-right:1em;
+}
+
+#tab-saturday:after,
+#tab-sunday:after {
+    display: none;
 }
 
 .nav-pills .nav-link.active {
@@ -379,7 +394,7 @@ hr.separator {
 
 .btw {
     color: #002776;
-    font-size: x-small;
+    font-size: small;
     float: right;
     margin-right: 1.25em !important;
 }
@@ -396,9 +411,15 @@ hr.separator {
     margin: 4rem auto 4rem auto;
 }
 
+.faq-card {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    margin-top: 1rem;
+    padding: 1rem auto 1rem auto;
+}
+
 .faq-list {
     list-style-type: none;
-    margin: auto 2rem 2rem 1rem;
+    margin: 2rem 2rem 2rem 1rem;
 }
 
 @media (max-width: 767px) {
@@ -455,6 +476,10 @@ li span {
     cursor: pointer;
 }
 
+.email-blurb {
+    padding-bottom: 1rem;
+}
+
 .email-link {
     color: #E39774;
 }
@@ -501,7 +526,7 @@ li span {
     margin-top: 50%;
     width: 100%;
     text-align: center;
-    color: #5C9EAD;
+    color: #002776;
     font-weight: bold;
     font-size: 85% !important;
 }
@@ -533,12 +558,12 @@ li span {
 }
 
 .spon-contact {
-    color: #E39774;
+    color: #214E34;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid #E39774;
-    background-color: #E39774;
+    border: 1px solid #214E34;
+    background-color: #214E34;
     text-decoration: none;
     color: white;
     border-radius: 5px;
@@ -549,7 +574,7 @@ li span {
 
 .spon-contact:hover {
     color:white;
-    background-color: rgb(222, 158, 129);
+    background-color: #2f6846;
 }
 
 
@@ -567,7 +592,7 @@ footer {
 }
 
 #countdown {
-    color: #E39774;
+    color: #d46633;
     font-weight: 700;
     font-size: xx-large;
 }
