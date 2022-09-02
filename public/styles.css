@@ -64,7 +64,8 @@ p {
 
 /* header navbar ------------------------------------------------------------------------- */
 .navbar {
-    margin-bottom: 0;
+    margin-bottom: 0px;
+    padding-top: 0px !important;
 }
 
 .navbar-brand {
@@ -74,7 +75,6 @@ p {
 .navbar-nav {
     margin-left: auto;
     padding-right: 1em;
-    padding-top: 2rem;
 }
 
 .navbar-nav .nav-item {
@@ -116,8 +116,8 @@ p {
 .mlh-badge {
     position: absolute;
     top: -100%;
-    max-width:100px;
-    min-width:60px;
+    max-width: 100px;
+    min-width: 60px;
 }
 
 .mlh-badge:after {
@@ -140,6 +140,10 @@ p {
 }
 
 @media (max-width: 990px) {
+    .navbar-nav {
+        padding-top: 2rem;
+    }
+
     #mlh-badge-container {
         display: none;
     }
@@ -151,7 +155,7 @@ p {
     }
 
     #mlh-collapsed-badge {
-        top: -83%;
+        top: -52%;
     }
 }
 
