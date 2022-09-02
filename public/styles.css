@@ -5,8 +5,7 @@
     /* ivory white:  #FBFFF1 */
     /* light blue:   #C7F0FF */
 /* secondary */
-    /* light orange: #E39774 */
-    /* dark orange:  #d46633 */
+    /*  orange:      #E39774 */
     /* light green:  #407C59 */
     /* dark green:   #214E34 */
 
@@ -206,18 +205,18 @@ p {
 }
 
 #date {
-    color: #d46633 !important;
+    color: #E39774 !important;
     margin: 1em auto 1em auto;
     font-weight: bolder !important;
 }
 
 .signup {
-    color: #d46633;
+    color: #E39774;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid #d46633;
-    background-color: #d46633;
+    border: 1px solid #E39774;
+    background-color: #E39774;
     text-decoration: none;
     color: white;
     border-radius: 5px;
@@ -558,12 +557,12 @@ li span {
 }
 
 .spon-contact {
-    color: #214E34;
+    color: #E39774;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid #214E34;
-    background-color: #214E34;
+    border: 1px solid #E39774;
+    background-color: #E39774;
     text-decoration: none;
     color: white;
     border-radius: 5px;
@@ -592,7 +591,7 @@ footer {
 }
 
 #countdown {
-    color: #d46633;
+    color: #E39774;
     font-weight: 700;
     font-size: xx-large;
 }
