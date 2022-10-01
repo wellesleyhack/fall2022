@@ -5,7 +5,8 @@
     /* ivory white:  #FBFFF1 */
     /* light blue:   #C7F0FF */
 /* secondary */
-    /*  orange:      #E39774 */
+    /* light orange: #E39774 */
+    /* dark orange:  #d46633 */
     /* light green:  #407C59 */
     /* dark green:   #214E34 */
 
@@ -75,6 +76,11 @@ p {
 .navbar-nav {
     margin-left: auto;
     padding-right: 1em;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-nav .nav-item {
@@ -205,18 +211,18 @@ p {
 }
 
 #date {
-    color: #E39774 !important;
+    color: #d46633 !important;
     margin: 1em auto 1em auto;
     font-weight: bolder !important;
 }
 
 .signup {
-    color: #E39774;
+    color: #d46633;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid #E39774;
-    background-color: #E39774;
+    border: 1px solid #d46633;
+    background-color: #d46633;
     text-decoration: none;
     color: white;
     border-radius: 5px;
@@ -235,8 +241,8 @@ p {
     font-size: x-large !important;
 }
 
-/* prizes ------------------------------------------------------------------------------ */
-#prizes {
+/* themes ------------------------------------------------------------------------------ */
+#themes {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -275,6 +281,15 @@ p {
 .row >
 .card-text-col >
 .card-body >
+.card-subtitle {
+    margin: 0em 0em 2em 0em !important;
+    padding: 0em !important;
+}
+
+.prize-card >
+.row >
+.card-text-col >
+.card-body >
 .card-text {
     margin: 0em 0em 2em 0em !important;
     padding: 0em !important;
@@ -292,6 +307,18 @@ p {
 .card-img {
     margin: auto 1em 1em auto !important;
     width: 75% !important;
+}
+
+.prize-icons {
+    margin-top: 3rem;
+}
+
+.theme-icon {
+    margin-bottom: 2rem;
+}
+
+.fa-solid {
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 767px) {
@@ -557,12 +584,12 @@ li span {
 }
 
 .spon-contact {
-    color: #E39774;
+    color: #214E34;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid #E39774;
-    background-color: #E39774;
+    border: 1px solid #214E34;
+    background-color: #214E34;
     text-decoration: none;
     color: white;
     border-radius: 5px;
@@ -591,7 +618,7 @@ footer {
 }
 
 #countdown {
-    color: #E39774;
+    color: #d46633;
     font-weight: 700;
     font-size: xx-large;
 }
