@@ -433,7 +433,7 @@ hr.separator {
     width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 770px) {
     .sch-card {
         width: 130% !important;
         min-width: 130% !important;
