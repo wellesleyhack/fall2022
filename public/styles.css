@@ -623,6 +623,26 @@ li span {
     background-color: #2f6846;
 }
 
+.logoImg {
+    max-width: 100%;
+}
+
+@media (max-width: 575px) {
+    .sponLevelTitle {
+        margin-bottom: 2rem;
+    }
+
+    .logoImg {
+        max-width: 70%;
+        margin-bottom: 3rem;
+    }
+}
+
+.logoCol {
+    display: flex;
+    align-items: center;
+}
+
 
 
 /* footer ------------------------------------------------------------------------------ */
