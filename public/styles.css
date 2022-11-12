@@ -13,7 +13,6 @@
 /* global ------------------------------------------------------------------------------ */
 body {
     /* background: url("../images/bw-bg.jpg") center center / cover no-repeat fixed; */
-    /* color: white; */
     background: url("images/vine1.svg") left top no-repeat, url("images/vine2.svg") left top no-repeat, url("images/vine3.svg") left bottom no-repeat;
     background-size: contain, contain, contain;
     font-family: 'Montserrat', sans-serif !important;
@@ -50,7 +49,6 @@ p {
 .bg-overlay {
     /* background-image: linear-gradient(to right bottom, rgb(0, 153, 204), rgb(102, 153, 0)); */
     background-color: #002776;
-    /* opacity: 0.8; */
 }
 
 .btn-primary {
@@ -277,6 +275,12 @@ p {
     }
 }
 
+@media (max-width: 550px) {
+    .col {
+        flex: 1 0 100% !important;
+    }
+}
+
 .card-title {
     padding-bottom: 1rem;
     font-size: 15pt;
@@ -324,20 +328,13 @@ p {
     margin-bottom: 0.5rem;
 }
 
-/* @media (max-width: 767px) { */
-    .card-body {
-        text-align: center;
-    }
+.card-body {
+    text-align: center;
+}
 
-    .card-img-col {
-        text-align: center;
-    }
-
-    /* .card-img {
-        margin: 2rem auto 1rem auto !important;
-        width: 75% !important;
-    } */
-/* } */
+.card-img-col {
+    text-align: center;
+}
 
 /* schedule ------------------------------------------------------------------------------ */
 #schedule {
@@ -427,14 +424,6 @@ p {
 .green {
     color: #0f6640 !important;
 }
-
-/* .time {
-    float: left;
-}
-
-.event {
-    float: right;
-} */
 
 hr.separator {
     text-align: center !important;
@@ -622,7 +611,6 @@ li span {
 #sponsors {
     /* shorthand:         img url             position  / size  repeat */
     background: url("./images/circuits.svg") center top / cover no-repeat;
-    /* margin: 6em auto 6em auto; */
     min-height: 100vh;
     display: flex;
     justify-content: center;
