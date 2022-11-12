@@ -37,6 +37,10 @@ h1 {
     h1 {
         text-align: center;
     }
+
+    #schedule h1 {
+        text-align: left;
+    }
 }
 
 p {
@@ -707,6 +711,12 @@ footer {
 .socialrow {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 500px) {
+    .conductP {
+        justify-content: center !important;
+    }
 }
 
 @media (max-width: 767px) {
