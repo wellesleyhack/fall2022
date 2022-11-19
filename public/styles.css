@@ -244,6 +244,42 @@ p {
 }
 
 /* themes ------------------------------------------------------------------------------ */
+#winners {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-deck {
+    display: flex;
+}
+
+.winner-card {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    margin: 0;
+    margin: 0rem 0.5rem 1rem 0.5rem;
+}
+
+.winner-card > .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.winner-card .card-title {
+    color:#161a24;
+}
+
+.winner-category {
+    color:#a34011 !important;
+    padding-bottom: 0.5rem;
+}
+
+.winner-description {
+    padding-bottom: 0.5rem;
+}
+
+/* themes ------------------------------------------------------------------------------ */
 #themes {
     min-height: 100vh;
     display: flex;
@@ -251,12 +287,16 @@ p {
     justify-content: center;
 }
 
+.card-deck {
+    display: flex;
+}
+
 .prize-card {
     background-color: rgba(255, 255, 255, 0.7) !important;
     padding-bottom: 1rem;
-    max-width: 700px; 
     margin-top: 2em;
-    min-width: 360px;
+    min-width: 360px; 
+    max-width: 700px;
 }
 
 @media (max-width: 600px) {
@@ -311,7 +351,7 @@ p {
     margin: 0em 0em 2em 0em !important;
 }
 
-.card-img {
+.prize-card > .card-img {
     margin: auto 1em 1em auto !important;
     width: 75% !important;
 }
@@ -563,7 +603,7 @@ li span {
     margin: auto 1em 1em 1em;
 }
 
-.card-img-top {
+.team-card > .card-img-top {
     padding-top: .9em;
 }
 
